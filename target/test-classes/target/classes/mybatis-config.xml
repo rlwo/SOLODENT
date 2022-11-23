@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd" >
+<configuration>
+
+	<typeAliases>
+		<typeAlias type="com.kh.solodent.member.model.vo.Member" alias="Member"/>
+		<typeAlias type="com.kh.solodent.board.model.vo.Attachment" alias="Attachment"/>
+		<typeAlias type="com.kh.solodent.board.model.vo.Board" alias="Board"/>
+		<typeAlias type="com.kh.solodent.board.model.vo.Moim" alias="Moim"/>
+		<typeAlias type="com.kh.solodent.board.model.vo.Used" alias="Used"/>
+		<typeAlias type="com.kh.solodent.board.model.vo.Like" alias="Like"/>
+		<typeAlias type="com.kh.solodent.board.model.vo.PageInfo" alias="PageInfo"/>
+	</typeAliases>
+	
+	<mappers>
+		<mapper resource="mappers/member-mapper.xml"/>
+		<mapper resource="mappers/moim-mapper.xml"/>
+	</mappers>
+	
+</configuration>
