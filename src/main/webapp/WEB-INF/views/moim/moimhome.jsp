@@ -245,7 +245,7 @@
         <div class="container">
   
             <div class="row gy-4 posts-list">
-                
+                사진이 나오지 않는 이유를 알고 싶어요.
                 <c:forEach items="${list}" var="moim">
 	                <div class="col-xl-4 col-md-6">
 	                <article>
@@ -255,7 +255,7 @@
 	                	</div>
 
 	                    <div class="post-img">
-	                    <c:forEach items="${attmlist }" var="att">
+	                    <c:forEach items="${attmlist}" var="att">
 								<c:if test="${moim.boardId eq att.boardId }">
 									<c:if test="${fn:containsIgnoreCase(att.rename,'jpg') or fn:containsIgnoreCase(att.rename,'png') or fn:containsIgnoreCase(att.rename,'jpeg')}">
 										<img src="${contextPath }/resources/uploadFiles/${att.rename}" alt="" class="img-fluid">
